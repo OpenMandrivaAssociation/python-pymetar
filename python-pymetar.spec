@@ -1,7 +1,7 @@
 %define oname	pymetar
   
 Name:		python-%{oname}
-Version:	0.13
+Version:	0.14
 Release:	%mkrel 1
 Summary:	Weather report Python module
 Group:		Development/Python
