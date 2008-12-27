@@ -34,7 +34,7 @@ rm -rf %{buildroot}
   
 %files  
 %defattr(-,root,root,-) 
-%doc README THANKS TODO librarydoc.txt bin/example.py
+%doc README THANKS librarydoc.txt
 %{_bindir}/weather.py
 %{py_puresitedir}/%{oname}.py*
 %{py_puresitedir}/%{oname}-%{version}-py%{pyver}.egg-info
