@@ -1,14 +1,13 @@
 %define oname	pymetar
   
 Name:		python-%{oname}
-Version:	0.15
+Version:	0.16
 Release:	%mkrel 1
 Summary:	Weather report Python module
 Group:		Development/Python
 License:	GPLv2+
 URL:		http://www.schwarzvogel.de/software-pymetar.shtml
 Source0:	http://www.schwarzvogel.de/pkgs/%{oname}-%{version}.tar.gz
-Patch0:     pymetar-0.15-fix-installation.patch
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 Requires:	python 
@@ -22,7 +21,6 @@ report.
   
 %prep
 %setup -q -n %{oname}-%{version}
-%patch0 -p 1
   
 %build 
   
@@ -37,7 +35,9 @@ rm -rf %{buildroot}
 %files  
 %defattr(-,root,root,-) 
 %doc README THANKS librarydoc.txt
-%{_bindir}/weather.py
-%{py_puresitedir}/%{oname}.py*
+%{_bindir}/%{oname}
 %{py_puresitedir}/%{oname}-%{version}-py%{pyver}.egg-info
+%{_libdir}/python2.6/site-packages/pymetar.py
+%{_libdir}/python2.6/site-packages/pymetar.pyc
+%{_libdir}/python2.6/site-packages/pymetar.pyo
 
