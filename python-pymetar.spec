@@ -36,8 +36,4 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-) 
 %doc README THANKS librarydoc.txt
 %{_bindir}/%{oname}
-%{py_puresitedir}/%{oname}-%{version}-py%{pyver}.egg-info
-%{_libdir}/python2.6/site-packages/pymetar.py
-%{_libdir}/python2.6/site-packages/pymetar.pyc
-%{_libdir}/python2.6/site-packages/pymetar.pyo
-
+%{py_puresitedir}/*
