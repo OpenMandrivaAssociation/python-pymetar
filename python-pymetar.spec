@@ -34,6 +34,7 @@ rm -rf %{buildroot}%{_docdir}
 %doc README THANKS librarydoc.txt
 %{_bindir}/%{oname}
 %{py_puresitedir}/*
+%{_mandir}/man1/pymetar.1.xz
 
 
 %changelog
