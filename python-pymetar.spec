@@ -1,18 +1,17 @@
 %define oname	pymetar
   
 Name:		python-%{oname}
-Version:	0.17
-Release:	%mkrel 1
+Version:	0.19
+Release:	1
 Summary:	Weather report Python module
 Group:		Development/Python
 License:	GPLv2+
 URL:		http://www.schwarzvogel.de/software-pymetar.shtml
-Source0:	http://www.schwarzvogel.de/pkgs/%{oname}-%{version}.tar.gz
+Source0:	http://www.schwarzvogel.de/pkgs/pymetar-%{version}.tar.gz
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 Requires:	python 
 BuildArch:	noarch 
-BuildRoot:	%{_tmppath}/%{name}-%{version}
   
 %description 
 This library downloads the weather report for a given station ID,
@@ -25,12 +24,10 @@ report.
 %build 
   
 %install 
-rm -rf %{buildroot}
 python setup.py install --root=%{buildroot} --compile --optimize=2
 rm -rf %{buildroot}%{_docdir}
 
 %clean 
-rm -rf %{buildroot}
   
 %files  
 %defattr(-,root,root,-) 
@@ -69,5 +66,6 @@ rm -rf %{buildroot}
 * Thu Jul 31 2008 Adam Williamson <awilliamson@mandriva.org> 0.13-1mdv2009.0
 + Revision: 258360
 - import python-pymetar
+
 
 

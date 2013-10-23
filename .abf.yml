@@ -1,2 +1,4 @@
+removed_sources:
+  pymetar-0.17.tar.gz: 8119983ccf4a5565e864f3431815bf759f083938
 sources:
-  "pymetar-0.17.tar.gz": 8119983ccf4a5565e864f3431815bf759f083938
+  pymetar-0.19.tar.gz: 968c4ec413f034e1ba7da99e91bd5e048fbf53c0
