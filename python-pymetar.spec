@@ -2,7 +2,7 @@
   
 Name:		python-%{oname}
 Version:	0.19
-Release:	1
+Release:	2
 Summary:	Weather report Python module
 Group:		Development/Python
 License:	GPLv2+
