@@ -6,7 +6,7 @@ Release:	2
 Summary:	Weather report Python module
 Group:		Development/Python
 License:	GPLv2+
-URL:		http://www.schwarzvogel.de/software-pymetar.shtml
+URL:		https://www.schwarzvogel.de/software-pymetar.shtml
 Source0:	http://www.schwarzvogel.de/pkgs/pymetar-%{version}.tar.gz
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
